@@ -22,3 +22,6 @@ desenvolvido com HTML, CSS e JavaScript.
 ## 🎨 Design (em desenvolvimento)
 O design visual do projeto será definido no Figma pelo integrante responsável,
 incluindo paleta de cores, tipografia e referências visuais.
+
+## 🎨 Design (Figma)
+https://www.figma.com/design/rhhbsWopDNpwnVPUvXtyZq/Untitled?node-id=0-1&t=ajWWu0mU6MQDIwmN-1
