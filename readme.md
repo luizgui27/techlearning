@@ -11,3 +11,14 @@ https://techlearning.vercel.app
 ## Descrição
 Projeto de uma agência digital fictícia focada em soluções tecnológicas para educação,
 desenvolvido com HTML, CSS e JavaScript.
+
+##  Tecnologias Utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- Hospedagem: Vercel
+- Versionamento: Git e GitHub
+
+## 🎨 Design (em desenvolvimento)
+O design visual do projeto será definido no Figma pelo integrante responsável,
+incluindo paleta de cores, tipografia e referências visuais.
