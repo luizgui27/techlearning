@@ -4,13 +4,23 @@
     --azul-escuro: #2B3E66;
     --azul-botao: #0645C7;
     --branco: #FFFFFF;
+    --cinza-claro: #F9F9F9;
+    --sombra-suave: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body { font-family: sans-serif; background-color: var(--branco); line-height: 1.6; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--branco);
+    line-height: 1.6;
+    color: var(--azul-escuro);
+}
 
-/* Ajuste do Header e Logotipo */
 header {
     background-color: var(--azul-escuro);
     display: flex;
@@ -21,45 +31,81 @@ header {
 }
 
 header .logo img {
-    height: 45px; /* Tamanho controlado para o logo não estourar */
+    height: 45px;
     width: auto;
+    border-radius: 8px;
+    display: block;
 }
 
-header nav { display: flex; gap: 20px; }
-header nav a img { width: 24px; height: 24px; transition: transform 0.2s; }
-header nav a img:hover { transform: scale(1.1); }
+header nav {
+    display: flex;
+    gap: 20px;
+}
 
-/* Hero Section */
+header nav a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+header nav a img:hover {
+    transform: scale(1.1);
+}
+
 #hero {
     background-color: var(--azul-claro);
     display: flex;
     align-items: center;
-    padding: 60px 10%;
+    padding: 80px 10%;
     gap: 40px;
 }
 
-#hero h1 { color: var(--azul-escuro); font-size: 2.5rem; margin-bottom: 20px; }
-#hero p { color: var(--azul-escuro); margin-bottom: 25px; font-size: 1.1rem; }
+#hero h1 {
+    color: var(--azul-escuro);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#hero p {
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+}
 
 .btn-destaque {
     background-color: var(--azul-botao);
     color: var(--branco);
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 14px 32px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1rem;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.btn-destaque:hover { background-color: #0539a5; }
+.btn-destaque:hover {
+    background-color: #0539a5;
+    transform: translateY(-2px);
+}
 
-.hero-imagem img { max-width: 100%; height: auto; border-radius: 15px; }
+.hero-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
 
-/* Seção de Serviços */
-#servicos { padding: 60px 10%; text-align: center; }
-#servicos h2 { margin-bottom: 40px; color: var(--azul-escuro); }
+#servicos {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#servicos h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
 
 .container-servicos {
     display: grid;
@@ -67,38 +113,104 @@ header nav a img:hover { transform: scale(1.1); }
     gap: 30px;
 }
 
-.card-servico { padding: 20px; border-radius: 15px; background: #f9f9f9; }
-.card-servico img { width: 60px; height: 60px; margin-bottom: 15px; object-fit: contain; }
-.card-servico h3 { margin-bottom: 10px; color: var(--azul-escuro); }
+.card-servico {
+    padding: 30px 20px;
+    border-radius: 16px;
+    background: var(--branco);
+    box-shadow: var(--sombra-suave);
+    border: 1px solid #EEEEEE;
+    transition: transform 0.3s ease;
+}
 
-/* Seção Como Funciona */
+.card-servico:hover {
+    transform: translateY(-5px);
+}
+
+.card-servico img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.card-servico h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
 #como-funciona {
     background-color: var(--azul-medio);
-    padding: 60px 10%;
+    padding: 80px 10%;
     color: var(--branco);
     text-align: center;
 }
 
-.container-passos { display: flex; justify-content: space-around; margin-top: 40px; gap: 20px; }
+.container-passos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+}
 
-.passo { flex: 1; }
-.img-passo { width: 120px; height: auto; margin: 15px auto; display: block; filter: brightness(0) invert(1); }
+.passo {
+    flex: 1;
+}
+
+.img-passo {
+    width: 100px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
 
 .numero {
     background: var(--azul-escuro);
-    width: 45px; height: 45px;
-    display: flex; align-items: center; justify-content: center;
-    border-radius: 50%; margin: 0 auto 15px; font-weight: bold; font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    font-weight: 700;
 }
 
-footer { text-align: center; padding: 30px; background-color: var(--azul-escuro); color: var(--branco); }
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    font-size: 0.9rem;
+}
 
-/* Responsividade Mobile */
+@media (max-width: 992px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+    
+    .container-servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-    header { flex-direction: column; padding: 20px; text-align: center; }
-    header nav { margin-top: 20px; justify-content: center; }
-    #hero { flex-direction: column; text-align: center; padding: 40px 5%; }
-    #hero h1 { font-size: 1.8rem; }
-    .container-servicos { grid-template-columns: 1fr; }
-    .container-passos { flex-direction: column; gap: 50px; align-items: center; }
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    .container-servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .container-passos {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
