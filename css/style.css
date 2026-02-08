@@ -3,9 +3,13 @@
     --azul-claro: #AAC6FF;
     --azul-escuro: #2B3E66;
     --azul-botao: #0645C7;
+    --sucesso: #28a745;
     --branco: #FFFFFF;
-    --cinza-claro: #F9F9F9;
-    --sombra-suave: 0 4px 15px rgba(0,0,0,0.05);
+    --sombra-card: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -19,6 +23,7 @@ body {
     background-color: var(--branco);
     line-height: 1.6;
     color: var(--azul-escuro);
+    overflow-x: hidden;
 }
 
 header {
@@ -28,6 +33,10 @@ header {
     align-items: center;
     padding: 15px 50px;
     border-radius: 0 0 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
 }
 
 header .logo img {
@@ -50,7 +59,7 @@ header nav a img {
 }
 
 header nav a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 #hero {
@@ -83,7 +92,7 @@ header nav a img:hover {
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -106,6 +115,7 @@ header nav a img:hover {
 #servicos h2 {
     margin-bottom: 50px;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .container-servicos {
@@ -118,7 +128,7 @@ header nav a img:hover {
     padding: 30px 20px;
     border-radius: 16px;
     background: var(--branco);
-    box-shadow: var(--sombra-suave);
+    box-shadow: var(--sombra-card);
     border: 1px solid #EEEEEE;
     transition: transform 0.3s ease;
 }
@@ -204,6 +214,10 @@ footer {
 
     header nav {
         margin-top: 20px;
+    }
+
+    .btn-destaque {
+        margin-bottom: 30px;
     }
 
     .container-servicos {
