@@ -4,20 +4,11 @@
     --azul-escuro: #2B3E66;
     --azul-botao: #0645C7;
     --branco: #FFFFFF;
-    --preto: #000000;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-    font-family: sans-serif;
-    background-color: var(--branco);
-    color: var(--preto);
-}
+body { font-family: sans-serif; background-color: var(--branco); }
 
 header {
     background-color: var(--azul-escuro);
@@ -28,10 +19,8 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
-header nav a {
-    margin-left: 20px;
-    text-decoration: none;
-}
+header nav { display: flex; gap: 20px; }
+header nav a img { width: 24px; height: 24px; }
 
 #hero {
     background-color: var(--azul-claro);
@@ -41,15 +30,7 @@ header nav a {
     gap: 40px;
 }
 
-.hero-texto {
-    flex: 1;
-}
-
-#hero h1 {
-    color: var(--azul-escuro);
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
+#hero h1 { color: var(--azul-escuro); font-size: 2.5rem; margin-bottom: 20px; }
 
 .btn-destaque {
     background-color: var(--azul-botao);
@@ -61,20 +42,9 @@ header nav a {
     font-weight: bold;
 }
 
-.hero-imagem img {
-    max-width: 100%;
-    height: auto;
-}
+.hero-imagem img { max-width: 100%; height: auto; }
 
-#servicos {
-    padding: 40px 10%;
-    text-align: center;
-}
-
-#servicos h2 {
-    color: var(--azul-escuro);
-    margin-bottom: 40px;
-}
+#servicos { padding: 40px 10%; text-align: center; }
 
 .container-servicos {
     display: grid;
@@ -82,9 +52,7 @@ header nav a {
     gap: 30px;
 }
 
-.card-servico img {
-    margin-bottom: 15px;
-}
+.card-servico img { width: 60px; margin-bottom: 15px; }
 
 #como-funciona {
     background-color: var(--azul-medio);
@@ -93,74 +61,23 @@ header nav a {
     text-align: center;
 }
 
-.container-passos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
+.container-passos { display: flex; justify-content: space-around; margin-top: 40px; }
 
-.passo {
-    flex: 1;
-    padding: 0 10px;
-}
+.img-passo { width: 100px; height: auto; margin: 15px auto; display: block; }
 
 .numero {
     background: var(--azul-escuro);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 auto 15px;
-    font-weight: bold;
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; margin: 0 auto 15px; font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--azul-escuro);
-    color: var(--branco);
-}
+footer { text-align: center; padding: 20px; background-color: var(--azul-escuro); color: var(--branco); }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 15px;
-        text-align: center;
-    }
-
-    header nav {
-        margin-top: 15px;
-        display: flex;
-        gap: 15px;
-    }
-
-    header nav a {
-        margin-left: 0;
-    }
-
-    #hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-
-    #hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .container-servicos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .container-passos {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .passo {
-        padding: 0;
-    }
+    header { flex-direction: column; padding: 15px; }
+    header nav { margin-top: 15px; }
+    #hero { flex-direction: column; text-align: center; }
+    .container-servicos { grid-template-columns: 1fr; }
+    .container-passos { flex-direction: column; gap: 40px; }
 }
