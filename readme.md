@@ -19,8 +19,8 @@ Atendendo aos requisitos da missão desta semana:
 
 ## 👥 Integrantes do grupo
 - Luiz Guilherme (Desenvolvedor)
-- Antonio Estevam (Desenvolvedor)
-- Victor Cesar (UI/UX Designer)
+- Antonio Estevam (UI/UX Designer)
+- Victor Cesar (Desenvolvedor)
 
 ## 📄 Descrição
 Projeto de uma agência digital fictícia focada em soluções tecnológicas para educação e cursos EAD. O objetivo é transformar conhecimento em experiências digitais através de design estratégico e plataformas LMS.
