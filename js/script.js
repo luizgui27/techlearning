@@ -37,8 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
         btnBuscar.addEventListener('click', (e) => {
             e.preventDefault();
             const termo = prompt("O que você deseja buscar no site?");
-            if (termo) {
+            
+            if (termo && termo.trim() !== "") {
                 alert(`Buscando por: "${termo}"...`);
+            } else if (termo !== null) {
+                alert("Por favor, digite algo para buscar.");
             }
         });
     }
@@ -47,8 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
         btnLogin.addEventListener('click', (e) => {
             e.preventDefault();
             const email = prompt("Digite seu e-mail de aluno:");
-            if (email) {
+            
+            if (email && email.trim() !== "") {
                 alert(`Bem-vindo de volta, ${email}!`);
+            } else if (email !== null) {
+                alert("O campo de e-mail não pode ficar vazio.");
             }
         });
     }
