@@ -1,36 +1,39 @@
-# Projeto Agência Digital Educacional – Tech Learning
+# 🐺 Tech Learning - Agência Digital Educacional
 
-## 🔗 Site online
-[Acesse o projeto aqui](https://techlearning.vercel.app)
+Projeto final de uma agência digital focada em soluções tecnológicas para educação e cursos EAD. Transformamos conhecimento em experiências digitais através de design estratégico e plataformas LMS modernas.
 
-## 🎨 Protótipo no Figma (Semana 2)
-[Link do Design - Figma](https://www.figma.com/design/rhhbsWopDNpwnVPUvXtyZq/Untitled?node-id=0-1&t=ajWWu0mU6MQDIwmN-1)
-
----
-
-## 🚀 Entrega Semana 2: Layout & Código
-Atendendo aos requisitos da missão desta semana:
-
-- [x] **HTML Semântico:** Estrutura utilizando tags de significado (`header`, `main`, `section`, `article`, `footer`).
-- [x] **Layout CSS:** Implementação de **Flexbox** (Header e Hero) e **CSS Grid** (Seção de Serviços) para alinhamento profissional.
-- [x] **Estilização Base:** Aplicação da paleta de cores oficial e tipografia definida no Guia de Estilos do Figma.
+## 🔗 Links do Projeto
+* **Site Online (Deploy):** [https://techlearning.vercel.app](https://techlearning.vercel.app)
+* **Protótipo de Alta Fidelidade (Figma):** [Link do Design - Figma](https://www.figma.com/design/rhhbsWopDNpwnVPUvXtyZq/Untitled?node-id=0-1&t=ajWWu0mU6MQDIwmN-1)
 
 ---
 
-## 👥 Integrantes do grupo
-- Luiz Guilherme (Desenvolvedor)
-- Antonio Estevam (UI/UX Designer)
-- Victor Cesar (Desenvolvedor)
+## 🚀 Funcionalidades e Requisitos Técnicos
+Atendendo aos critérios de avaliação da fase final:
 
-## 📄 Descrição
-Projeto de uma agência digital fictícia focada em soluções tecnológicas para educação e cursos EAD. O objetivo é transformar conhecimento em experiências digitais através de design estratégico e plataformas LMS.
+### 📱 Desenvolvimento (Dev)
+- **Responsividade Total:** Interface adaptável para dispositivos móveis e tablets via Media Queries, garantindo usabilidade em qualquer tamanho de tela.
+- **JavaScript Funcional:** Implementação de interatividade no DOM, incluindo feedback visual de conversão (CTA), sistema de compartilhamento via Web Share API e simulações de busca e login.
+- **SEO & Performance:** Configuração de Meta Tags (Título/Descrição), implementação de Favicon e otimização de fontes para carregamento rápido.
+- **HTML5 & CSS3:** Uso rigoroso de tags semânticas, CSS Grid e Flexbox.
+
+### 🎨 Design (UI/UX)
+- **Fidelidade Visual:** Execução precisa do guia de estilos definido no Figma, incluindo tipografia, paleta de cores e bordas arredondadas.
+- **Experiência do Usuário:** Rolagem suave (Smooth Scroll) e transições de hover para melhor navegabilidade.
+
+---
+
+## 👥 Integrantes (Squad)
+- **Luiz Guilherme** (Desenvolvedor)
+- **Antonio Estevam** (UI/UX Designer)
+- **Victor Cesar** (Desenvolvedor)
 
 ## 🛠 Tecnologias Utilizadas
-- **HTML5** (Semântico)
-- **CSS3** (Flexbox & Grid)
-- **JavaScript** (Próximas fases)
-- **Vercel** (Hospedagem)
-- **Git & GitHub** (Versionamento)
+- HTML5 Semântico
+- CSS3 (Custom Properties, Grid, Flexbox)
+- JavaScript (Vanilla JS / DOM Manipulation)
+- Vercel (Hospedagem e CI/CD)
+- Git & GitHub (Versionamento)
 
 ---
-© 2026 - Tech Learning
+© 2026 - Tech Learning | Entrega Final - Mobile & Interatividade
